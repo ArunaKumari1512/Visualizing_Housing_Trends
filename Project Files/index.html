@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Housing Market Portal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background: rgba(82, 192, 204, 0.9);
+      padding: 10px 20px;
+      z-index: 1000;
+      display: flex;
+      gap: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 100px 30px;
+      min-height: 100vh;
+    }
+
+    #home {
+      background-image: url('https://static.vecteezy.com/system/resources/previews/026/586/050/large_2x/beautiful-modern-house-exterior-with-carport-modern-residential-district-and-minimalist-building-concept-by-ai-generated-free-photo.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #home h1 {
+      font-size: 3em;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    #about {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      background-color: rgb(30, 30, 95);
+    }
+
+    #about img {
+      width: 40%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    #about .text {
+      max-width: 500px;
+      text-align: left;
+      color: antiquewhite;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+    }
+
+    #dashboard, #story {
+      background-color: #ffffff;
+      text-align: center;
+      background-color: rgb(30, 30, 95);
+    }
+
+    .tableauPlaceholder {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#story">Story</a>
+  </nav>
+
+  <section id="home">
+    <h1>Welcome to Housing Market Insights</h1>
+    <p style="font-size: large;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;color: rgb(252, 252, 250);padding: 10px;">Explore real-time housing market trends, stories, and data visualization</p>
+  </section>
+
+  <section id="about">
+    <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be" alt="Building">
+    <div class="text">
+      <h2>About the Project</h2>
+      <p>
+        This project explores the dynamic housing market trends across regions and time. Using Tableau,
+        we visualize critical data such as average housing prices, mortgage rates, and market shifts
+        to help understand where the market is heading. Our goal is to provide actionable insights
+        for buyers, sellers, and policy makers.
+      </p>
+    </div>
+  </section>
+
+  <section id="dashboard">
+    <h2 style="color: antiquewhite;padding:10px;font-family: Georgia, 'Times New Roman', Times, serif;">Housing Market Dashboard</h2>
+    <div class="tableauPlaceholder" id="tableauDashboard">
+      <object class="tableauViz" width="100%" height="600" style="display: none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="VisualizingHousingMarketTrends_17515735757040&#47;Dashboard1" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/Vi/VisualizingHousingMarketTrends_17515735757040/Dashboard1/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
+        <param name="filter" value="publish=yes" />
+      </object>
+    </div>
+  </section>
+
+  <section id="story">
+    <h2 style="color: antiquewhite;padding: 10px;font-family: Georgia, 'Times New Roman', Times, serif;">Housing Market Story</h2>
+    <div class="tableauPlaceholder" id="tableauStory">
+      <object class="tableauViz" width="100%" height="600" style="display: none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="VisualizingHousingMarketTrends_17515735757040&#47;Story1" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image" value="https://public.tableau.com/static/images/Vi/VisualizingHousingMarketTrends_17515735757040/Story1/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
+        <param name="filter" value="publish=yes" />
+      </object>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Housing Market Analysis
+  </footer>
+
+  <script>
+    function loadTableauViz(id) {
+      var divElement = document.getElementById(id);
+      var vizElement = divElement.getElementsByTagName('object')[0];
+      if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = (divElement.offsetWidth * 0.75) + 'px';
+      } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '1200px';
+      }
+      var scriptElement = document.createElement('script');
+      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+      vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      loadTableauViz('tableauDashboard');
+      loadTableauViz('tableauStory');
+    });
+  </script>
+
+</body>
+</html>
